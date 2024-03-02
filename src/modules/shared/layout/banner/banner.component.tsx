@@ -1,6 +1,5 @@
 import React from 'react';
-import { CardMedia, Box, Card } from '@mui/material';
-import { AspectRatio } from '@mui/icons-material';
+import { CardMedia,  Card } from '@mui/material';
 
 function BannerComponent() {
     return (
@@ -12,7 +11,7 @@ function BannerComponent() {
                         title="Video Banner"
                         style={{ height: '100%', width: '100%' }} // Asegura que el video llene el espacio del Card
                     autoPlay={true}
-                    playsInline
+                     playsInline
                         loop
                         muted
                     />

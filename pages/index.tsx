@@ -1,14 +1,28 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import LandingTemplate from '../src/modules/shared/layout/containers'
-import styles from '../styles/Home.module.css'
 import NewsSectionContainer from '../src/modules/news/containers/index';
+import { NextPage, GetServerSideProps } from 'next';
 
-const Home: NextPage = () => {
+// Helper function to detect a mobile device based on the User-Agent
+const isMobile = (userAgent: any) => {
+  return /iPhone|iPad|iPod|Android/i.test(userAgent);
+};
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const userAgent = context.req.headers['user-agent'] || '';
+  const mobile = isMobile(userAgent);
+
+  return {
+    props: {
+      isMobile: mobile,
+    },
+  };
+};
+
+
+const Home: NextPage<{ isMobile: boolean }> = ({ isMobile }) => {
   return (
     <LandingTemplate>
-      <NewsSectionContainer/>
+      <NewsSectionContainer isMobile={ isMobile }/>
     </LandingTemplate>
   )
 }

@@ -1,59 +1,23 @@
 import React from 'react';
-import { Grid, Card, CardContent, Typography, CardMedia, Chip } from '@mui/material';
+import { Grid } from '@mui/material';
+import newsMock from '../../../../mocks/news.json'
+import NewsCardComponent from '../components/new/new.card.component';
+import NewsCardMobileComponent from '../components/new/new.card.mobile.component';
 
-const newsItems = [
-    {
-        title: "Título de la Noticia 1",
-        subtitle: "Subtítulo de la noticia 1",
-        description: "Descripción detallada de la noticia 1. Este texto ofrece una visión más completa sobre el tema tratado.",
-        tags: ["Tag1", "Tag2"],
-        imageUrl: "https://via.placeholder.com/150",
-    },
-    {
-        title: "Título de la Noticia 2",
-        subtitle: "Subtítulo de la noticia 2",
-        description: "Descripción detallada de la noticia 2. Aquí se expande la información introducida por el título y el subtítulo.",
-        tags: ["Tag3", "Tag4"],
-        imageUrl: "https://via.placeholder.com/150",
-    },
-    // Agrega más noticias según sea necesario
-];
+const NewsSection: React.FC<any> = ({isMobile}) => {
 
-function NewsSection() {
+    const [newsItems] = React.useState<any>(newsMock.news);
+
     return (
         <Grid container spacing={2}>
-            {newsItems.map((news, index) => (
+            {newsItems.map((newItem: any, index: number) => (
                 <Grid item xs={12} key={index}>
-                    <Card>
-                        <Grid container spacing={2}>
-                            <Grid item xs={8}>
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        {news.title}
-                                    </Typography>
-                                    <Typography gutterBottom variant="subtitle1" color="text.secondary">
-                                        {news.subtitle}
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        {news.description}
-                                    </Typography>
-                                    <div style={{ marginTop: '10px' }}>
-                                        {news.tags.map((tag, index) => (
-                                            <Chip label={tag} key={index} style={{ marginRight: '5px' }} />
-                                        ))}
-                                    </div>
-                                </CardContent>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <CardMedia
-                                    component="img"
-                                    image={news.imageUrl}
-                                    alt={news.title}
-                                    style={{ width: '100%', height: '100%' }}
-                                />
-                            </Grid>
-                        </Grid>
-                    </Card>
+                    {isMobile ?
+                        <NewsCardMobileComponent  {...newItem} />
+                        :
+                        <NewsCardComponent {...newItem} />
+                    }
+                   
                 </Grid>
             ))}
         </Grid>

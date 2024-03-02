@@ -1,0 +1,59 @@
+{
+    "news": [
+        {
+            "id": 1,
+            "title": "Exploring the New Frontiers of Technology",
+            "description": "The latest advancements in technology are creating unprecedented opportunities for innovation and growth across multiple sectors.",
+            "tags": [
+                "Technology",
+                "Innovation",
+                "Growth"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+        },
+        {
+            "id": 2,
+            "title": "Global Economic Trends to Watch in 2024",
+            "description": "Economists predict several key trends that will shape the global economy in the upcoming year, including shifts in trade policies, technological advancements, and sustainability efforts.",
+            "tags": [
+                "Economy",
+                "Global Trends",
+                "2024"
+            ],
+            "imageUrl": "https://picsum.photos/270/180?random=2"
+        },
+        {
+            "id": 3,
+            "title": "Achieving Sustainability in the Fashion Industry",
+            "description": "The fashion industry is moving towards more sustainable practices, reducing waste and promoting eco-friendly production methods.",
+            "tags": [
+                "Sustainability",
+                "Fashion",
+                "Eco-friendly"
+            ],
+            "imageUrl": "https://picsum.photos/270/180?random=3"
+        },
+        {
+            "id": 4,
+            "title": "The Rise of Remote Work: Transforming the Workplace",
+            "description": "Remote work is becoming more prevalent, offering flexibility and challenging traditional office culture. Companies and employees alike are navigating this new landscape.",
+            "tags": [
+                "Remote Work",
+                "Workplace Culture",
+                "Flexibility"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+        },
+        {
+            "id": 5,
+            "title": "Breakthroughs in Health: Innovations That Are Changing Lives",
+            "description": "Recent innovations in healthcare are revolutionizing treatments and improving patient outcomes, from cutting-edge technologies to new drug discoveries.",
+            "tags": [
+                "Healthcare",
+                "Innovation",
+                "Patient Care"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+        }
+    ]
+}
