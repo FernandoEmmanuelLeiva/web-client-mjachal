@@ -13,10 +13,10 @@ const LandingPage: React.FC<any> = (props) => {
             <Container maxWidth="md">
                 <Box my={4}>
                     <Typography variant="h2" component="h1" gutterBottom>
-                        Mantente informado con las últimas noticias de Jachal
+                     Novedades
                     </Typography>
                     <Typography variant="h5" component="h2" gutterBottom>
-                        Descubre más sobre el organigrama del municipio, realiza trámites en línea y conoce las últimas iniciativas del intendente.
+                        Mantente informado con las últimas noticias de Jachal
                     </Typography>
                     <Button variant="contained" color="primary">
                         Leer más
