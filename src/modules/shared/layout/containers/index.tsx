@@ -1,18 +1,12 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button, Container, Box, CardMedia } from '@mui/material';
 import BannerComponent from '../banner/banner.component';
+import Header from '../header.component';
 
 const LandingPage: React.FC<any> = (props) => {
     return (
         <div>
-            <AppBar position="static">
-                <Toolbar>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Comunidad de Jachal
-                    </Typography>
-                    <Button color="inherit">Login</Button>
-                </Toolbar>
-            </AppBar>
+          <Header/>
 
 
         <BannerComponent/>
