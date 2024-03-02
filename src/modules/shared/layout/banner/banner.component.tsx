@@ -11,7 +11,6 @@ function BannerComponent() {
                         image="./banner.mp4" // Sustituye esto por la ruta de tu video
                         title="Video Banner"
                         style={{ height: '100%', width: '100%' }} // Asegura que el video llene el espacio del Card
-                        controls
                         autoPlay={true}
                         loop
                         muted
