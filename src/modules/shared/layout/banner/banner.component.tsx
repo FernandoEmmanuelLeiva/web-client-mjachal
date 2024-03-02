@@ -12,9 +12,9 @@ function BannerComponent() {
                         title="Video Banner"
                         style={{ height: '100%', width: '100%' }} // Asegura que el video llene el espacio del Card
                         controls
-                        autoPlay
+                        autoPlay={true}
                         loop
-                        muted // Recomendado para no interferir con la experiencia del usuario
+                        muted
                     />
                 </Card>
         </div>
